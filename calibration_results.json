@@ -1,0 +1,102 @@
+{
+  "Model_B": {
+    "HL_chi2": 93.05,
+    "p_value": 0.0,
+    "calibration_data": [
+      {
+        "group": 1,
+        "n": 8417,
+        "observed": 0.0031,
+        "expected": 0.0082,
+        "obs_ci_low": 0.002,
+        "obs_ci_high": 0.0043,
+        "mean_pred": 0.0082
+      },
+      {
+        "group": 2,
+        "n": 8417,
+        "observed": 0.0089,
+        "expected": 0.0159,
+        "obs_ci_low": 0.007,
+        "obs_ci_high": 0.0109,
+        "mean_pred": 0.0159
+      },
+      {
+        "group": 3,
+        "n": 8417,
+        "observed": 0.0207,
+        "expected": 0.0241,
+        "obs_ci_low": 0.0177,
+        "obs_ci_high": 0.0238,
+        "mean_pred": 0.0241
+      },
+      {
+        "group": 4,
+        "n": 8417,
+        "observed": 0.0312,
+        "expected": 0.0341,
+        "obs_ci_low": 0.0276,
+        "obs_ci_high": 0.035,
+        "mean_pred": 0.0341
+      },
+      {
+        "group": 5,
+        "n": 8417,
+        "observed": 0.0449,
+        "expected": 0.0471,
+        "obs_ci_low": 0.0405,
+        "obs_ci_high": 0.0494,
+        "mean_pred": 0.0471
+      },
+      {
+        "group": 6,
+        "n": 8417,
+        "observed": 0.0683,
+        "expected": 0.0646,
+        "obs_ci_low": 0.063,
+        "obs_ci_high": 0.0738,
+        "mean_pred": 0.0646
+      },
+      {
+        "group": 7,
+        "n": 8417,
+        "observed": 0.1026,
+        "expected": 0.0898,
+        "obs_ci_low": 0.0962,
+        "obs_ci_high": 0.1092,
+        "mean_pred": 0.0898
+      },
+      {
+        "group": 8,
+        "n": 8416,
+        "observed": 0.1384,
+        "expected": 0.1299,
+        "obs_ci_low": 0.1311,
+        "obs_ci_high": 0.1458,
+        "mean_pred": 0.1299
+      },
+      {
+        "group": 9,
+        "n": 8416,
+        "observed": 0.2139,
+        "expected": 0.2063,
+        "obs_ci_low": 0.2052,
+        "obs_ci_high": 0.2227,
+        "mean_pred": 0.2063
+      },
+      {
+        "group": 10,
+        "n": 8416,
+        "observed": 0.4337,
+        "expected": 0.4458,
+        "obs_ci_low": 0.4231,
+        "obs_ci_high": 0.4443,
+        "mean_pred": 0.4458
+      }
+    ]
+  },
+  "Model_A": {
+    "HL_chi2": 23.52,
+    "p_value": 0.0028
+  }
+}

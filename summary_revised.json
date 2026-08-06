@@ -1,0 +1,72 @@
+{
+  "n_total": 84167,
+  "kdigo_distribution": {
+    "0": 59033,
+    "1": 12817,
+    "2": 2729,
+    "3": 9588
+  },
+  "aki_prevalence_pct": 29.9,
+  "mortality_by_stage": {
+    "0": 5.98,
+    "1": 15.07,
+    "2": 26.75,
+    "3": 28.97
+  },
+  "kdigo_or_model_b": {
+    "1": {
+      "OR": 1.885,
+      "CI_low": 1.765,
+      "CI_high": 2.013,
+      "p": 0.0
+    },
+    "2": {
+      "OR": 2.978,
+      "CI_low": 2.688,
+      "CI_high": 3.3,
+      "p": 0.0
+    },
+    "3": {
+      "OR": 2.881,
+      "CI_low": 2.664,
+      "CI_high": 3.115,
+      "p": 0.0
+    }
+  },
+  "kdigo_hr_model_b": {
+    "1": {
+      "HR": 1.624,
+      "CI_low": 1.542,
+      "CI_high": 1.711,
+      "p": 0.0
+    },
+    "2": {
+      "HR": 2.255,
+      "CI_low": 2.088,
+      "CI_high": 2.435,
+      "p": 0.0
+    },
+    "3": {
+      "HR": 2.037,
+      "CI_low": 1.917,
+      "CI_high": 2.165,
+      "p": 0.0
+    }
+  },
+  "model_a_aic": 48347.0,
+  "model_b_aic": 44716.3,
+  "cox_b_cindex": 0.783,
+  "logrank_chi2": 4737.29,
+  "logrank_p": 0.0,
+  "stage3_rrt_stratification": {
+    "rrt_only": 793,
+    "cr_only": 5617,
+    "both": 3178
+  },
+  "ckd_icd_vs_lab": {
+    "ckd_icd_n": 24211,
+    "ckd_lab_n": 28581,
+    "both": 18570,
+    "icd_sensitivity_vs_lab": 65.0
+  }
+}

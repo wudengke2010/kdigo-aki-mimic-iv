@@ -1,0 +1,21 @@
+{
+  "kdigo_1": {
+    "aOR": 1.61,
+    "CI_low": 1.453,
+    "CI_high": 1.785
+  },
+  "kdigo_2": {
+    "aOR": 2.32,
+    "CI_low": 1.978,
+    "CI_high": 2.721
+  },
+  "kdigo_3": {
+    "aOR": 2.17,
+    "CI_low": 1.922,
+    "CI_high": 2.449
+  },
+  "N_complete_case": 17285,
+  "N_full": 84167,
+  "AUC_full": 0.827,
+  "AUC_cc": 0.771
+}

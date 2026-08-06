@@ -1,0 +1,106 @@
+{
+  "kdigo_1": {
+    "chi2": 6.26,
+    "p": 0.0123
+  },
+  "kdigo_2": {
+    "chi2": 6.253,
+    "p": 0.0124
+  },
+  "kdigo_3": {
+    "chi2": 84.585,
+    "p": 0.0
+  },
+  "age": {
+    "chi2": 0.711,
+    "p": 0.3992
+  },
+  "male": {
+    "chi2": 12.754,
+    "p": 0.0004
+  },
+  "sofa_total": {
+    "chi2": 380.277,
+    "p": 0.0
+  },
+  "mech_vent": {
+    "chi2": 153.631,
+    "p": 0.0
+  },
+  "vasopressor": {
+    "chi2": 14.218,
+    "p": 0.0002
+  },
+  "com_Congestive_Heart_Failure": {
+    "chi2": 10.62,
+    "p": 0.0011
+  },
+  "com_Cardiac_Arrhythmias": {
+    "chi2": 16.902,
+    "p": 0.0
+  },
+  "com_Valvular_Disease": {
+    "chi2": 12.335,
+    "p": 0.0004
+  },
+  "com_Hypertension": {
+    "chi2": 2.352,
+    "p": 0.1251
+  },
+  "com_Diabetes_uncomplicated": {
+    "chi2": 0.232,
+    "p": 0.6299
+  },
+  "com_Diabetes_complicated": {
+    "chi2": 1.333,
+    "p": 0.2483
+  },
+  "com_Chronic_Pulmonary": {
+    "chi2": 0.03,
+    "p": 0.8622
+  },
+  "com_Liver_Disease": {
+    "chi2": 22.388,
+    "p": 0.0
+  },
+  "com_Coagulopathy": {
+    "chi2": 14.155,
+    "p": 0.0002
+  },
+  "com_Fluid/Electrolyte": {
+    "chi2": 11.764,
+    "p": 0.0006
+  },
+  "com_Metastatic_Cancer": {
+    "chi2": 1.644,
+    "p": 0.1998
+  },
+  "com_Solid_Tumor_non-met": {
+    "chi2": 0.254,
+    "p": 0.614
+  },
+  "com_Obesity": {
+    "chi2": 0.807,
+    "p": 0.3691
+  },
+  "com_Peripheral_Vascular": {
+    "chi2": 0.023,
+    "p": 0.8782
+  },
+  "com_Cerebrovascular": {
+    "chi2": 5.466,
+    "p": 0.0194
+  },
+  "com_Sepsis": {
+    "chi2": 8.471,
+    "p": 0.0036
+  },
+  "com_Myocardial_Infarction": {
+    "chi2": 5.839,
+    "p": 0.0157
+  },
+  "com_Peptic_Ulcer": {
+    "chi2": 1.039,
+    "p": 0.308
+  }
+}

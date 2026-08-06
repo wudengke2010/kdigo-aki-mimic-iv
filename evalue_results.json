@@ -1,0 +1,73 @@
+{
+  "description": "E-value analysis for KDIGO AKI study Model B",
+  "reference": "VanderWeele TJ, Ding P. Ann Intern Med. 2017;167(4):268-274",
+  "baseline_risk_p0": 0.0598,
+  "results": [
+    {
+      "model": "Logistic (Model B)",
+      "exposure": "Stage 1",
+      "estimate_type": "aOR",
+      "estimate": 1.885,
+      "ci_low": 1.765,
+      "ci_high": 2.013,
+      "approx_rr": 1.79,
+      "evalue_point": 2.98,
+      "evalue_ci_low": 2.77
+    },
+    {
+      "model": "Logistic (Model B)",
+      "exposure": "Stage 2",
+      "estimate_type": "aOR",
+      "estimate": 2.978,
+      "ci_low": 2.688,
+      "ci_high": 3.3,
+      "approx_rr": 2.663,
+      "evalue_point": 4.77,
+      "evalue_ci_low": 4.32
+    },
+    {
+      "model": "Logistic (Model B)",
+      "exposure": "Stage 3",
+      "estimate_type": "aOR",
+      "estimate": 2.881,
+      "ci_low": 2.664,
+      "ci_high": 3.115,
+      "approx_rr": 2.59,
+      "evalue_point": 4.62,
+      "evalue_ci_low": 4.28
+    },
+    {
+      "model": "Cox (Model B)",
+      "exposure": "Stage 1",
+      "estimate_type": "HR",
+      "estimate": 1.624,
+      "ci_low": 1.542,
+      "ci_high": 1.711,
+      "approx_rr": 1.274,
+      "evalue_point": 1.87,
+      "evalue_ci_low": 1.79
+    },
+    {
+      "model": "Cox (Model B)",
+      "exposure": "Stage 2",
+      "estimate_type": "HR",
+      "estimate": 2.255,
+      "ci_low": 2.088,
+      "ci_high": 2.435,
+      "approx_rr": 1.502,
+      "evalue_point": 2.37,
+      "evalue_ci_low": 2.25
+    },
+    {
+      "model": "Cox (Model B)",
+      "exposure": "Stage 3",
+      "estimate_type": "HR",
+      "estimate": 2.037,
+      "ci_low": 1.917,
+      "ci_high": 2.165,
+      "approx_rr": 1.427,
+      "evalue_point": 2.21,
+      "evalue_ci_low": 2.11
+    }
+  ]
+}

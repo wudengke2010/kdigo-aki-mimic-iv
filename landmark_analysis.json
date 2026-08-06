@@ -1,0 +1,39 @@
+{
+  "stage_1": {
+    "OR": 2.127,
+    "CI_low": 1.984,
+    "CI_high": 2.28,
+    "p": 0.0
+  },
+  "stage_2": {
+    "OR": 3.644,
+    "CI_low": 3.274,
+    "CI_high": 4.056,
+    "p": 0.0
+  },
+  "stage_3": {
+    "OR": 3.341,
+    "CI_low": 3.074,
+    "CI_high": 3.631,
+    "p": 0.0
+  },
+  "N": 82509,
+  "AUC": 0.702,
+  "full_OR_comparison": {
+    "stage_1": {
+      "full_OR": 1.893,
+      "landmark_OR": 2.127,
+      "ratio": 1.124
+    },
+    "stage_2": {
+      "full_OR": 3.022,
+      "landmark_OR": 3.644,
+      "ratio": 1.206
+    },
+    "stage_3": {
+      "full_OR": 2.598,
+      "landmark_OR": 3.341,
+      "ratio": 1.286
+    }
+  }
+}
