@@ -219,7 +219,7 @@ if __name__ == '__main__':
     # 1. Manuscript (exclude title page section)
     convert_md_to_docx(
         base / 'manuscript_revised_v2.md',
-        base / 'manuscript_renal_failure_v9.docx',
+        base / 'manuscript_renal_failure_v10.docx',
         exclude_title_page=True
     )
     
