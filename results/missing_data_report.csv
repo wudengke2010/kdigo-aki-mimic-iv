@@ -1,0 +1,37 @@
+Variable,Column,N_missing,Pct_missing
+Age,age,0,0.0
+Sex,male,0,0.0
+SOFA score,sofa_total,0,0.0
+SOFA neuro (GCS),sofa_neuro,0,0.0
+SOFA coag (platelet),sofa_coag,0,0.0
+SOFA liver (bilirubin),sofa_liver,0,0.0
+SOFA cardiovascular (MAP),sofa_cv,0,0.0
+SOFA renal (creatinine),sofa_renal,0,0.0
+SOFA resp (vent/PaO2),sofa_resp,0,0.0
+Mechanical ventilation,mech_vent,0,0.0
+Vasopressor use,vasopressor,0,0.0
+Baseline creatinine,baseline_cr,0,0.0
+Peak creatinine,peak_cr,0,0.0
+Creatinine ratio,cr_ratio,0,0.0
+BUN,lab_bun,830,1.0
+Sodium,lab_sodium,836,1.0
+Potassium,lab_potassium,857,1.0
+Bicarbonate,lab_bicarbonate,864,1.0
+Lactate,lab_lactate,32444,38.5
+WBC,lab_wbc,1228,1.5
+Hemoglobin,lab_hemoglobin,1242,1.5
+Platelet,lab_platelet,1217,1.4
+Total bilirubin,lab_bilirubin_total,41928,49.8
+Albumin,lab_albumin,54535,64.8
+Glucose,lab_glucose,1043,1.2
+Heart rate,heart_rate_mean,94,0.1
+Systolic BP,sbp_mean,54864,65.2
+Diastolic BP,dbp_mean,54853,65.2
+Mean arterial pressure,mbp_mean,54820,65.1
+Respiratory rate,resp_rate_mean,268,0.3
+Temperature,temperature_mean,5336,6.3
+SpO2,spo2_mean,172,0.2
+GCS total,gcs_total,51506,61.2
+CKD (ICD),ckd_icd,0,0.0
+CKD (lab),ckd_lab,0,0.0
+Sepsis,com_Sepsis,0,0.0

@@ -1,0 +1,48 @@
+{
+  "interaction": {
+    "chi2": 118.83,
+    "df": 3,
+    "p_value": 0.0
+  },
+  "stage1_interaction": {
+    "OR": 0.879,
+    "CI_low": 0.765,
+    "CI_high": 1.009,
+    "p": 0.066955
+  },
+  "stage2_interaction": {
+    "OR": 0.876,
+    "CI_low": 0.695,
+    "CI_high": 1.104,
+    "p": 0.260932
+  },
+  "stage3_interaction": {
+    "OR": 0.476,
+    "CI_low": 0.414,
+    "CI_high": 0.546,
+    "p": 0.0
+  },
+  "stage1_labckd_interaction": {
+    "OR": 1.061,
+    "CI_low": 0.934,
+    "CI_high": 1.206,
+    "p": 0.363566
+  },
+  "stage2_labckd_interaction": {
+    "OR": 0.925,
+    "CI_low": 0.741,
+    "CI_high": 1.156,
+    "p": 0.494358
+  },
+  "stage3_labckd_interaction": {
+    "OR": 0.318,
+    "CI_low": 0.275,
+    "CI_high": 0.367,
+    "p": 0.0
+  },
+  "labckd_interaction": {
+    "chi2": 274.72,
+    "df": 3,
+    "p_value": 0.0
+  }
+}

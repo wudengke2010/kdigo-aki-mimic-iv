@@ -1,0 +1,7 @@
+model,exposure,estimate_type,estimate,ci_low,ci_high,approx_rr,evalue_point,evalue_ci_low
+Logistic (Model B),Stage 1,aOR,1.885,1.765,2.013,1.79,2.98,2.77
+Logistic (Model B),Stage 2,aOR,2.978,2.688,3.3,2.663,4.77,4.32
+Logistic (Model B),Stage 3,aOR,2.881,2.664,3.115,2.59,4.62,4.28
+Cox (Model B),Stage 1,HR,1.624,1.542,1.711,1.274,1.87,1.79
+Cox (Model B),Stage 2,HR,2.255,2.088,2.435,1.502,2.37,2.25
+Cox (Model B),Stage 3,HR,2.037,1.917,2.165,1.427,2.21,2.11
