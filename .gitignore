@@ -1,39 +1,30 @@
-# Data files (MIMIC-IV DUA prohibits sharing)
+# Ignore raw MIMIC-IV data (must be downloaded separately from PhysioNet)
 *.csv
 *.csv.gz
+*.db
+*.sqlite
 *.parquet
 
-# Output files
-*.docx
-*.pdf
-*.png
-*.json
-*.xlsx
-
-# Python
+# Ignore large intermediate files
 __pycache__/
 *.pyc
-*.pyo
-.venv/
-venv/
-*.egg-info/
+*.pkl
+*.h5
 
-# R
-.Rhistory
-.RData
-.Rproj.user/
+# Ignore WorkBuddy/memory (project-specific)
+.workbuddy/memory/
 
-# OS
-.DS_Store
-Thumbs.db
-desktop.ini
-
-# IDE
-.vscode/
-.idea/
-*.swp
-*~
-
-# Manuscript drafts (not for public sharing during review)
+# Ignore manuscript drafts and local notes (not part of code repo)
+*.docx
 *.md
 !README.md
+!LICENSE
+
+# Keep Python analysis scripts and result files
+!*.py
+!*.json
+!requirements.txt
+
+# Keep key result files under results/
+!results/*.csv
+!results/*.json

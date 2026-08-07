@@ -1,0 +1,60 @@
+{
+  "Sepsis": {
+    "n": 22648,
+    "mortality_pct": 18.1,
+    "AUC": 0.822,
+    "kdigo_or": {
+      "1": {
+        "OR": 2.697,
+        "CI_low": 2.422,
+        "CI_high": 3.004,
+        "p": 0.0
+      },
+      "2": {
+        "OR": 4.11,
+        "CI_low": 3.524,
+        "CI_high": 4.793,
+        "p": 0.0
+      },
+      "3": {
+        "OR": 3.449,
+        "CI_low": 3.076,
+        "CI_high": 3.867,
+        "p": 0.0
+      }
+    }
+  },
+  "Non-sepsis": {
+    "n": 61519,
+    "mortality_pct": 7.9,
+    "AUC": 0.818,
+    "kdigo_or": {
+      "1": {
+        "OR": 1.525,
+        "CI_low": 1.4,
+        "CI_high": 1.66,
+        "p": 0.0
+      },
+      "2": {
+        "OR": 2.321,
+        "CI_low": 2.015,
+        "CI_high": 2.673,
+        "p": 0.0
+      },
+      "3": {
+        "OR": 2.501,
+        "CI_low": 2.238,
+        "CI_high": 2.794,
+        "p": 0.0
+      }
+    }
+  },
+  "interaction": {
+    "chi2": 81.3,
+    "df": 3,
+    "p_value": 0.0,
+    "stage1_interaction_OR": 1.747,
+    "stage2_interaction_OR": 1.751,
+    "stage3_interaction_OR": 1.256
+  }
+}

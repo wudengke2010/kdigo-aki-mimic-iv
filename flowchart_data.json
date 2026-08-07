@@ -1,0 +1,60 @@
+{
+  "total_icu_stays": 94458,
+  "total_hadm": 85242,
+  "total_patients": 65366,
+  "excluded_age_lt_18": 0,
+  "excluded_duplicate_stays": 0,
+  "after_first_icu_adult": 85242,
+  "excluded_missing_cr": 1075,
+  "final_cohort": 84167,
+  "aki_n": 25134,
+  "aki_pct": 29.9,
+  "stage_counts": {
+    "0": 59033,
+    "1": 12817,
+    "2": 2729,
+    "3": 9588
+  },
+  "stage3_stratification": {
+    "rrt_only": 793,
+    "cr_only": 5617,
+    "both": 3178
+  },
+  "vital_outlier_counts": {
+    "heart_rate": {
+      "raw": 2188334,
+      "kept": 2187544,
+      "excluded": 790
+    },
+    "sbp": {
+      "raw": 699704,
+      "kept": 699133,
+      "excluded": 571
+    },
+    "dbp": {
+      "raw": 699586,
+      "kept": 699014,
+      "excluded": 572
+    },
+    "mbp": {
+      "raw": 702773,
+      "kept": 697531,
+      "excluded": 5242
+    },
+    "resp_rate": {
+      "raw": 2161693,
+      "kept": 2151383,
+      "excluded": 10310
+    },
+    "temperature": {
+      "raw": 491540,
+      "kept": 491067,
+      "excluded": 473
+    },
+    "spo2": {
+      "raw": 2139495,
+      "kept": 2138770,
+      "excluded": 725
+    }
+  }
+}

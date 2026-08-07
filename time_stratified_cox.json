@@ -1,0 +1,30 @@
+{
+  "full_30d": {
+    "N": 84160,
+    "events": 8970,
+    "stage_1": {"HR": 1.366, "CI_low": 1.293, "CI_high": 1.443},
+    "stage_2": {"HR": 1.477, "CI_low": 1.363, "CI_high": 1.602},
+    "stage_3": {"HR": 1.460, "CI_low": 1.372, "CI_high": 1.553}
+  },
+  "0-7d": {
+    "N_at_risk": 84160,
+    "N_events": 6819,
+    "stage_1": {"HR": 1.352, "CI_low": 1.272, "CI_high": 1.436},
+    "stage_2": {"HR": 1.543, "CI_low": 1.407, "CI_high": 1.693},
+    "stage_3": {"HR": 1.414, "CI_low": 1.319, "CI_high": 1.515}
+  },
+  "7-14d": {
+    "N_at_risk": 9467,
+    "N_events": 1374,
+    "stage_1": {"HR": 1.416, "CI_low": 1.225, "CI_high": 1.637},
+    "stage_2": {"HR": 1.217, "CI_low": 0.994, "CI_high": 1.491},
+    "stage_3": {"HR": 1.605, "CI_low": 1.373, "CI_high": 1.875}
+  },
+  "14-30d": {
+    "N_at_risk": 3254,
+    "N_events": 777,
+    "stage_1": {"HR": 1.159, "CI_low": 0.916, "CI_high": 1.467},
+    "stage_2": {"HR": 1.379, "CI_low": 1.057, "CI_high": 1.800},
+    "stage_3": {"HR": 1.862, "CI_low": 1.492, "CI_high": 2.324}
+  }
+}
