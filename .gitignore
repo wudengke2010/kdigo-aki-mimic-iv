@@ -1,0 +1,39 @@
+# Data files (MIMIC-IV DUA prohibits sharing)
+*.csv
+*.csv.gz
+*.parquet
+
+# Output files
+*.docx
+*.pdf
+*.png
+*.json
+*.xlsx
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+venv/
+*.egg-info/
+
+# R
+.Rhistory
+.RData
+.Rproj.user/
+
+# OS
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*~
+
+# Manuscript drafts (not for public sharing during review)
+*.md
+!README.md
