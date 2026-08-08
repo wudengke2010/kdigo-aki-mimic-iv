@@ -20,6 +20,15 @@ __pycache__/
 !README.md
 !LICENSE
 
+# Exception: keep CKJ submission manuscript and supplementary files
+!manuscript_ckj_submission.md
+!manuscript_ckj_submission.docx
+!cover_letter_ckj.md
+!ckj_submission_checklist.md
+!ckj_submission_assessment.md
+!manuscript_revised_v3.md
+!manuscript_dual_cohort_v12.docx
+
 # Keep Python analysis scripts and result files
 !*.py
 !*.json
@@ -28,3 +37,29 @@ __pycache__/
 # Keep key result files under results/
 !results/*.csv
 !results/*.json
+
+# Ignore matplotlib cache and config
+.matplotlib/
+.matplotlib_cache/
+.mpl_cache/
+.mplconfig/
+
+# Ignore font cache
+fontlist-*.json
+fontlist-*.json.*
+
+# Ignore log files
+*.log
+
+# Ignore intermediate/draft files
+*.drawio
+*.dot
+paper_summary.txt
+kdigo_dashboard*.html
+
+# Ignore benchmark extraction files
+bench_*.txt
+bench_nonrenal/
+
+# Ignore WorkBuddy local state
+.workbuddy/

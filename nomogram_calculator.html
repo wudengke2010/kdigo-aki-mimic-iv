@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KDIGO AKI ICU Mortality Calculator</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            max-width: 600px;
+            margin: 50px auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .calculator {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2166ac;
+            font-size: 20px;
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #666;
+            font-size: 13px;
+            margin-bottom: 25px;
+        }
+        .input-group {
+            margin-bottom: 15px;
+        }
+        label {
+            display: block;
+            font-weight: bold;
+            margin-bottom: 5px;
+            font-size: 14px;
+        }
+        select, input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        .result {
+            margin-top: 20px;
+            padding: 20px;
+            border-radius: 8px;
+            text-align: center;
+        }
+        .result-low { background: #d4edda; color: #155724; }
+        .result-moderate { background: #fff3cd; color: #856404; }
+        .result-high { background: #f8d7da; color: #721c24; }
+        .risk-value { font-size: 36px; font-weight: bold; }
+        .risk-label { font-size: 14px; margin-top: 5px; }
+        .disclaimer {
+            margin-top: 20px;
+            font-size: 11px;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="calculator">
+        <h1>KDIGO AKI ICU Mortality Calculator</h1>
+        <p class="subtitle">Based on eICU-CRD validation cohort (N=166,373)<br>
+        Model B: KDIGO Stage + APACHE + Mech. Vent + Age + Sex</p>
+
+        <div class="input-group">
+            <label>KDIGO AKI Stage</label>
+            <select id="kdigo">
+                <option value="0">Stage 0 (No AKI)</option>
+                <option value="1">Stage 1</option>
+                <option value="2">Stage 2</option>
+                <option value="3">Stage 3</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>APACHE IVa Score</label>
+            <input type="number" id="apache" value="40" min="0" max="200">
+        </div>
+
+        <div class="input-group">
+            <label>Mechanical Ventilation</label>
+            <select id="vent">
+                <option value="0">No</option>
+                <option value="1">Yes</option>
+            </select>
+        </div>
+
+        <div class="input-group">
+            <label>Age (years)</label>
+            <input type="number" id="age" value="65" min="18" max="100">
+        </div>
+
+        <div class="input-group">
+            <label>Sex</label>
+            <select id="sex">
+                <option value="0">Female</option>
+                <option value="1">Male</option>
+            </select>
+        </div>
+
+        <button onclick="calculate()" style="width:100%;padding:12px;background:#2166ac;color:white;border:none;border-radius:5px;font-size:16px;cursor:pointer;">
+            Calculate Risk
+        </button>
+
+        <div id="result" class="result" style="display:none;">
+            <div class="risk-value" id="riskValue">--</div>
+            <div class="risk-label" id="riskLabel">--</div>
+        </div>
+
+        <div class="disclaimer">
+            This calculator is for research purposes only and should not be used for clinical decision-making.
+            Model performance: AUC = 0.818 (eICU-CRD). Validated against MIMIC-IV (AUC = 0.828).
+        </div>
+    </div>
+
+    <script>
+        // Logistic regression coefficients (Model B)
+        const coef = {
+            const: -6.224510,
+            kdigo_1: 0.614650,
+            kdigo_2: 1.033414,
+            kdigo_3: 0.948271,
+            apachescore: 0.032651,
+            mech_vent: 0.584159,
+            age_num: 0.017593,
+            gender_male: -0.021536
+        };
+
+        function calculate() {
+            const kdigo = parseInt(document.getElementById('kdigo').value);
+            const apache = parseFloat(document.getElementById('apache').value);
+            const vent = parseInt(document.getElementById('vent').value);
+            const age = parseFloat(document.getElementById('age').value);
+            const sex = parseInt(document.getElementById('sex').value);
+
+            const logit = coef.const +
+                (kdigo === 1 ? coef.kdigo_1 : 0) +
+                (kdigo === 2 ? coef.kdigo_2 : 0) +
+                (kdigo === 3 ? coef.kdigo_3 : 0) +
+                coef.apachescore * apache +
+                coef.mech_vent * vent +
+                coef.age_num * age +
+                coef.gender_male * sex;
+
+            const prob = 1 / (1 + Math.exp(-logit));
+            const pct = (prob * 100).toFixed(1);
+
+            const resultDiv = document.getElementById('result');
+            const riskValue = document.getElementById('riskValue');
+            const riskLabel = document.getElementById('riskLabel');
+
+            riskValue.textContent = pct + '%';
+
+            resultDiv.style.display = 'block';
+
+            if (prob < 0.1) {
+                resultDiv.className = 'result result-low';
+                riskLabel.textContent = 'Low risk of ICU mortality';
+            } else if (prob < 0.25) {
+                resultDiv.className = 'result result-moderate';
+                riskLabel.textContent = 'Moderate risk of ICU mortality';
+            } else {
+                resultDiv.className = 'result result-high';
+                riskLabel.textContent = 'High risk of ICU mortality';
+            }
+        }
+    </script>
+</body>
+</html>

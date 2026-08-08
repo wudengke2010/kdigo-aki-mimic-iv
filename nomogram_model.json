@@ -1,0 +1,23 @@
+{
+  "model": "Logistic Regression (Model B)",
+  "cohort": "eICU-CRD v2.0 (N=166,373)",
+  "coefficients": {
+    "const": -6.22451046721022,
+    "kdigo_1": 0.6146496985078137,
+    "kdigo_2": 1.0334142826569395,
+    "kdigo_3": 0.948270818072682,
+    "apachescore": 0.032650974629952444,
+    "mech_vent": 0.5841593222435338,
+    "age_num": 0.017592752734922588,
+    "gender_male": -0.021536015337891855
+  },
+  "auc": 0.818,
+  "brier_score": 0.062297739890105105,
+  "variables": [
+    "KDIGO Stage",
+    "APACHE Score",
+    "Mechanical Ventilation",
+    "Age",
+    "Sex"
+  ]
+}

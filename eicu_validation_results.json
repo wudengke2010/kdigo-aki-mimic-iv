@@ -1,0 +1,106 @@
+{
+  "database": "eICU-CRD v2.0",
+  "n_total": 166373,
+  "kdigo_distribution": {
+    "0": 113389,
+    "1": 28129,
+    "2": 6523,
+    "3": 18332
+  },
+  "aki_prevalence_pct": 31.8,
+  "mortality_by_stage": {
+    "0": 4.6,
+    "1": 12.5,
+    "2": 18.0,
+    "3": 19.2
+  },
+  "overall_mortality_pct": 8.1,
+  "mean_age": 62.4,
+  "male_pct": 54.6,
+  "mean_apache": 54.1,
+  "mech_vent_pct": 22.8,
+  "ckd_pct": 4.8,
+  "rrt_pct": 4.7,
+  "kdigo_or_model_a": {
+    "kdigo_1": {
+      "OR": 2.995,
+      "CI_low": 2.863,
+      "CI_high": 3.133,
+      "p": 0.0
+    },
+    "kdigo_2": {
+      "OR": 4.575,
+      "CI_low": 4.27,
+      "CI_high": 4.903,
+      "p": 0.0
+    },
+    "kdigo_3": {
+      "OR": 4.961,
+      "CI_low": 4.737,
+      "CI_high": 5.195,
+      "p": 0.0
+    }
+  },
+  "kdigo_or_model_b": {
+    "kdigo_1": {
+      "OR": 1.849,
+      "CI_low": 1.761,
+      "CI_high": 1.942,
+      "p": 9.021226127539038e-134
+    },
+    "kdigo_2": {
+      "OR": 2.811,
+      "CI_low": 2.603,
+      "CI_high": 3.035,
+      "p": 4.09673465830847e-153
+    },
+    "kdigo_3": {
+      "OR": 2.581,
+      "CI_low": 2.45,
+      "CI_high": 2.719,
+      "p": 6.200049546815159e-280
+    }
+  },
+  "kdigo_hr_model_b": {
+    "kdigo_1": {
+      "HR": 1.174,
+      "CI_low": 1.124,
+      "CI_high": 1.227,
+      "p": 7.549051042830004e-13
+    },
+    "kdigo_2": {
+      "HR": 1.352,
+      "CI_low": 1.267,
+      "CI_high": 1.442,
+      "p": 6.559703689573324e-20
+    },
+    "kdigo_3": {
+      "HR": 1.253,
+      "CI_low": 1.196,
+      "CI_high": 1.313,
+      "p": 1.5985225484719187e-21
+    }
+  },
+  "ckd_interaction": {
+    "ckd_kdigo1": {
+      "OR": 0.959,
+      "CI_low": 0.789,
+      "CI_high": 1.167,
+      "p": 0.6786088589484176
+    },
+    "ckd_kdigo2": {
+      "OR": 1.243,
+      "CI_low": 0.877,
+      "CI_high": 1.761,
+      "p": 0.22111682465719262
+    },
+    "ckd_kdigo3": {
+      "OR": 0.726,
+      "CI_low": 0.603,
+      "CI_high": 0.872,
+      "p": 0.0006477754958022394
+    }
+  },
+  "auc_model_a": 0.672,
+  "auc_model_b": 0.818
+}
