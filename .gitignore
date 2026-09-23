@@ -63,3 +63,10 @@ bench_nonrenal/
 
 # Ignore WorkBuddy local state
 .workbuddy/
+
+# Exception: JTM submission package (transparency of submitted version)
+!jtm_submission/manuscript_jtm.md
+!jtm_submission/cover_letter_jtm.md
+!jtm_submission/strobe_checklist_jtm.docx
+!journal_recommendations_v2.md
+*.err
