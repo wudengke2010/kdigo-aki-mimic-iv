@@ -1,0 +1,31 @@
+{
+  "total_icu_stays": 94458,
+  "total_icu_patients": 65366,
+  "after_adult": 94458,
+  "excluded_age_lt18": 0,
+  "after_los_12h": 90467,
+  "excluded_los_lt12h": 3991,
+  "after_patient_dedup": 63487,
+  "excluded_repeat_stays": 26980,
+  "after_esrd_exclusion": 61404,
+  "excluded_esrd_dialysis": 2083,
+  "after_baseline_available": 60979,
+  "excluded_no_baseline": 425,
+  "after_scr_in_window": 60824,
+  "excluded_no_window_scr": 155,
+  "final_cohort": 60506,
+  "kdigo_distribution": {
+    "0": 43011,
+    "1": 11882,
+    "2": 2249,
+    "3": 3364
+  },
+  "overall_mortality": 0.0989984464350643,
+  "aki_prevalence": 0.2891448781938981,
+  "baseline_source_dist": {
+    "prior_0_7d": 25615,
+    "prior_outpt_7_365d": 21330,
+    "hosp_first24h": 11967,
+    "prior_any_7_365d": 1594
+  }
+}

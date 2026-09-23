@@ -1,0 +1,15 @@
+{
+  "cardio_records": 36709,
+  "platelet_records": 59586,
+  "bili_records": 27060,
+  "gcs_records": 60396,
+  "resp_records": 35616,
+  "renal_records": 60441,
+  "sofa_nonrenal_available": 60506,
+  "sofa_full_available": 60506,
+  "sofa_missing_any": 50209,
+  "sofa_nonrenal_mean": 5.138812679734241,
+  "sofa_nonrenal_std": 4.264278284602997,
+  "sofa_full_mean": 5.805953128615344,
+  "sofa_full_std": 4.561866086512695
+}

@@ -1,0 +1,46 @@
+{
+  "total_unit_stays": 200859,
+  "total_patients": 139367,
+  "age_gt89_recoded": 7081,
+  "excluded_age_missing": 95,
+  "after_adult": 200234,
+  "excluded_age_lt18": 530,
+  "after_los_12h": 172392,
+  "excluded_los_lt12h": 27842,
+  "after_patient_dedup": 130361,
+  "excluded_repeat_stays": 42031,
+  "after_esrd_exclusion": 123838,
+  "excluded_esrd_dialysis": 6523,
+  "esrd_by_icd": 2801,
+  "esrd_by_pasthistory": 6219,
+  "after_baseline_available": 115497,
+  "excluded_no_baseline": 8341,
+  "after_scr_in_window": 117303,
+  "excluded_no_window_scr": -1806,
+  "final_cohort": 113466,
+  "kdigo_distribution": {
+    "0": 95203,
+    "1": 11999,
+    "2": 1874,
+    "3": 4390
+  },
+  "unit_mortality": 0.05333756367546225,
+  "hospital_mortality": 0.08416618193996439,
+  "aki_prevalence": 0.1609557047926251,
+  "mortality_by_stage_hospital": {
+    "0": 0.054368034620757746,
+    "1": 0.19576631385948828,
+    "2": 0.33884738527214514,
+    "3": 0.31662870159453305
+  },
+  "mortality_by_stage_unit": {
+    "0": 0.030387697866663864,
+    "1": 0.13392782731894323,
+    "2": 0.2545357524012807,
+    "3": 0.244874715261959
+  },
+  "baseline_source_dist": {
+    "icu_first24h": 68769,
+    "preICU_0_7d": 44697
+  }
+}

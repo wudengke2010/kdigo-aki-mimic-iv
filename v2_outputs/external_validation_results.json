@@ -1,0 +1,387 @@
+{
+  "n_mimic_train": 58554,
+  "n_eicu_valid": 107758,
+  "covars": [
+    "kdigo_1",
+    "kdigo_2",
+    "kdigo_3",
+    "age",
+    "sex_male",
+    "sofa_nonrenal",
+    "vent_24h",
+    "ckd_history_prior",
+    "diabetes",
+    "hypertension",
+    "heart_failure",
+    "copd",
+    "liver_disease"
+  ],
+  "mimic_model_C": {
+    "concordance": 0.7527317374311796,
+    "concordance_95ci_lo": 0.7460680187725314,
+    "concordance_95ci_hi": 0.7601020060951075,
+    "hr": {
+      "kdigo_1": 1.3368,
+      "kdigo_2": 2.0336,
+      "kdigo_3": 2.4534,
+      "age": 1.0341,
+      "sex_male": 0.8564,
+      "sofa_nonrenal": 1.1356,
+      "vent_24h": 0.597,
+      "ckd_history_prior": 1.0546,
+      "diabetes": 0.8884,
+      "hypertension": 0.8137,
+      "heart_failure": 1.0056,
+      "copd": 1.121,
+      "liver_disease": 1.4951
+    },
+    "hr_lo": {
+      "kdigo_1": 1.2465,
+      "kdigo_2": 1.8434,
+      "kdigo_3": 2.2613,
+      "age": 1.0319,
+      "sex_male": 0.8111,
+      "sofa_nonrenal": 1.1255,
+      "vent_24h": 0.5548,
+      "ckd_history_prior": 0.9279,
+      "diabetes": 0.8356,
+      "hypertension": 0.7656,
+      "heart_failure": 0.9458,
+      "copd": 1.047,
+      "liver_disease": 1.392
+    },
+    "hr_hi": {
+      "kdigo_1": 1.4336,
+      "kdigo_2": 2.2434,
+      "kdigo_3": 2.6619,
+      "age": 1.0363,
+      "sex_male": 0.9042,
+      "sofa_nonrenal": 1.1458,
+      "vent_24h": 0.6425,
+      "ckd_history_prior": 1.1986,
+      "diabetes": 0.9445,
+      "hypertension": 0.8648,
+      "heart_failure": 1.0692,
+      "copd": 1.2002,
+      "liver_disease": 1.6057
+    },
+    "p": {
+      "kdigo_1": 4.08743583297699e-16,
+      "kdigo_2": 1.3726787953602057e-45,
+      "kdigo_3": 3.240006937869331e-103,
+      "age": 5.188248557528705e-208,
+      "sex_male": 2.2076765858419824e-08,
+      "sofa_nonrenal": 1.797474646324191e-171,
+      "vent_24h": 3.1276910871208354e-43,
+      "ckd_history_prior": 0.41581905064746494,
+      "diabetes": 0.00015323339327645184,
+      "hypertension": 3.399086397730772e-11,
+      "heart_failure": 0.8572037250926072,
+      "copd": 0.001042323391562283,
+      "liver_disease": 2.5153929803826914e-28
+    }
+  },
+  "eicu_external": {
+    "concordance_locked_lp": 0.7157197254826836,
+    "concordance_95ci_lo": 0.7084259594806769,
+    "concordance_95ci_hi": 0.7219536950984875,
+    "delta_c_vs_mimic": -0.037012011948496015,
+    "c_falls_in_mimic_ci": false,
+    "td_auc_7d_mimic": 0.7955616665400694,
+    "td_auc_7d_eicu": 0.7504474225100627,
+    "td_auc_14d_mimic": 0.8000954101416489,
+    "td_auc_14d_eicu": 0.7480708886219241,
+    "td_auc_28d_mimic": 0.799277865348023,
+    "td_auc_28d_eicu": 0.7457547216731533,
+    "brier_30d_mimic": 0.08018366495129954,
+    "brier_30d_eicu": 0.07097347082236917
+  },
+  "calibration": {
+    "slope": 0.9569152723306641,
+    "slope_hr": 2.603652514138085,
+    "slope_95ci_lo": 2.530590629472336,
+    "slope_95ci_hi": 2.6788238031969196,
+    "slope_p": 0.0,
+    "intercept": -2.2161513883747985,
+    "recalibration_C": 0.7157197254826836,
+    "hosmer_lemeshow_chi2": 867.3475803343268,
+    "hosmer_lemeshow_p": 0.0,
+    "decile_table": [
+      {
+        "decile": 1,
+        "n": 10779,
+        "events": 148,
+        "actual_30d": 12.71,
+        "predicted_30d": 9.11
+      },
+      {
+        "decile": 2,
+        "n": 10791,
+        "events": 245,
+        "actual_30d": 17.15,
+        "predicted_30d": 14.32
+      },
+      {
+        "decile": 3,
+        "n": 10758,
+        "events": 342,
+        "actual_30d": 25.6,
+        "predicted_30d": 18.3
+      },
+      {
+        "decile": 4,
+        "n": 10776,
+        "events": 461,
+        "actual_30d": 30.67,
+        "predicted_30d": 22.03
+      },
+      {
+        "decile": 5,
+        "n": 10783,
+        "events": 539,
+        "actual_30d": 29.58,
+        "predicted_30d": 25.9
+      },
+      {
+        "decile": 6,
+        "n": 10769,
+        "events": 659,
+        "actual_30d": 30.19,
+        "predicted_30d": 30.07
+      },
+      {
+        "decile": 7,
+        "n": 10774,
+        "events": 866,
+        "actual_30d": 38.82,
+        "predicted_30d": 34.76
+      },
+      {
+        "decile": 8,
+        "n": 10791,
+        "events": 1055,
+        "actual_30d": 45.96,
+        "predicted_30d": 40.29
+      },
+      {
+        "decile": 9,
+        "n": 10763,
+        "events": 1391,
+        "actual_30d": 48.48,
+        "predicted_30d": 47.89
+      },
+      {
+        "decile": 10,
+        "n": 10774,
+        "events": 2910,
+        "actual_30d": 61.78,
+        "predicted_30d": 65.7
+      }
+    ]
+  },
+  "dca": [
+    {
+      "threshold": 0.05,
+      "nb_model": 0.03378867462276583,
+      "nb_all": 0.0315336216336606,
+      "nb_none": 0.0
+    },
+    {
+      "threshold": 0.1,
+      "nb_model": -0.0008114891186217776,
+      "nb_all": -0.022270066053358253,
+      "nb_none": 0.0
+    },
+    {
+      "threshold": 0.15,
+      "nb_model": -0.018982622281080816,
+      "nb_all": -0.08240359935061461,
+      "nb_none": 0.0
+    },
+    {
+      "threshold": 0.2,
+      "nb_model": -0.024204699419068658,
+      "nb_all": -0.15005382431002803,
+      "nb_none": 0.0
+    },
+    {
+      "threshold": 0.25,
+      "nb_model": -0.022445355951916934,
+      "nb_all": -0.2267240792640299,
+      "nb_none": 0.0
+    },
+    {
+      "threshold": 0.3,
+      "nb_model": -0.01726752803239004,
+      "nb_all": -0.31434722778288926,
+      "nb_none": 0.0
+    }
+  ],
+  "cross_cohort_consistency": [
+    {
+      "variable": "kdigo_1",
+      "hr_mimic": 1.3368,
+      "hr_mimic_lo": 1.2465,
+      "hr_mimic_hi": 1.4336,
+      "hr_eicu": 1.8646,
+      "hr_eicu_lo": 1.7694,
+      "hr_eicu_hi": 1.9649,
+      "hr_ratio": 1.3948,
+      "p_eicu": 4.615962330723648e-120
+    },
+    {
+      "variable": "kdigo_2",
+      "hr_mimic": 2.0336,
+      "hr_mimic_lo": 1.8434,
+      "hr_mimic_hi": 2.2434,
+      "hr_eicu": 2.6731,
+      "hr_eicu_lo": 2.451,
+      "hr_eicu_hi": 2.9155,
+      "hr_ratio": 1.3145,
+      "p_eicu": 2.867463074182838e-109
+    },
+    {
+      "variable": "kdigo_3",
+      "hr_mimic": 2.4534,
+      "hr_mimic_lo": 2.2613,
+      "hr_mimic_hi": 2.6619,
+      "hr_eicu": 2.4638,
+      "hr_eicu_lo": 2.3096,
+      "hr_eicu_hi": 2.6283,
+      "hr_ratio": 1.0042,
+      "p_eicu": 1.3727074255474838e-164
+    },
+    {
+      "variable": "age",
+      "hr_mimic": 1.0341,
+      "hr_mimic_lo": 1.0319,
+      "hr_mimic_hi": 1.0363,
+      "hr_eicu": 1.0277,
+      "hr_eicu_lo": 1.0261,
+      "hr_eicu_hi": 1.0293,
+      "hr_ratio": 0.9938,
+      "p_eicu": 1.602774922261548e-255
+    },
+    {
+      "variable": "sex_male",
+      "hr_mimic": 0.8564,
+      "hr_mimic_lo": 0.8111,
+      "hr_mimic_hi": 0.9042,
+      "hr_eicu": 0.9325,
+      "hr_eicu_lo": 0.8939,
+      "hr_eicu_hi": 0.9729,
+      "hr_ratio": 1.089,
+      "p_eicu": 0.0012273629880483333
+    },
+    {
+      "variable": "sofa_nonrenal",
+      "hr_mimic": 1.1356,
+      "hr_mimic_lo": 1.1255,
+      "hr_mimic_hi": 1.1458,
+      "hr_eicu": 1.144,
+      "hr_eicu_lo": 1.1368,
+      "hr_eicu_hi": 1.1512,
+      "hr_ratio": 1.0074,
+      "p_eicu": 0.0
+    },
+    {
+      "variable": "vent_24h",
+      "hr_mimic": 0.597,
+      "hr_mimic_lo": 0.5548,
+      "hr_mimic_hi": 0.6425,
+      "hr_eicu": 1.468,
+      "hr_eicu_lo": 1.4004,
+      "hr_eicu_hi": 1.5388,
+      "hr_ratio": 2.4588,
+      "p_eicu": 1.9463821997385256e-57
+    },
+    {
+      "variable": "ckd_history_prior",
+      "hr_mimic": 1.0546,
+      "hr_mimic_lo": 0.9279,
+      "hr_mimic_hi": 1.1986,
+      "hr_eicu": 1.0354,
+      "hr_eicu_lo": 0.9187,
+      "hr_eicu_hi": 1.1669,
+      "hr_ratio": 0.9818,
+      "p_eicu": 0.5685546504934866
+    },
+    {
+      "variable": "diabetes",
+      "hr_mimic": 0.8884,
+      "hr_mimic_lo": 0.8356,
+      "hr_mimic_hi": 0.9445,
+      "hr_eicu": 0.8927,
+      "hr_eicu_lo": 0.8506,
+      "hr_eicu_hi": 0.9369,
+      "hr_ratio": 1.0049,
+      "p_eicu": 4.115627563046059e-06
+    },
+    {
+      "variable": "hypertension",
+      "hr_mimic": 0.8137,
+      "hr_mimic_lo": 0.7656,
+      "hr_mimic_hi": 0.8648,
+      "hr_eicu": 0.9006,
+      "hr_eicu_lo": 0.8617,
+      "hr_eicu_hi": 0.9412,
+      "hr_ratio": 1.1068,
+      "p_eicu": 3.2285236491392363e-06
+    },
+    {
+      "variable": "heart_failure",
+      "hr_mimic": 1.0056,
+      "hr_mimic_lo": 0.9458,
+      "hr_mimic_hi": 1.0692,
+      "hr_eicu": 1.1024,
+      "hr_eicu_lo": 1.0417,
+      "hr_eicu_hi": 1.1666,
+      "hr_ratio": 1.0962,
+      "p_eicu": 0.0007355803126778227
+    },
+    {
+      "variable": "copd",
+      "hr_mimic": 1.121,
+      "hr_mimic_lo": 1.047,
+      "hr_mimic_hi": 1.2002,
+      "hr_eicu": 1.2293,
+      "hr_eicu_lo": 1.1642,
+      "hr_eicu_hi": 1.298,
+      "hr_ratio": 1.0966,
+      "p_eicu": 1.0320214133431613e-13
+    },
+    {
+      "variable": "liver_disease",
+      "hr_mimic": 1.4951,
+      "hr_mimic_lo": 1.392,
+      "hr_mimic_hi": 1.6057,
+      "hr_eicu": 1.4162,
+      "hr_eicu_lo": 1.2808,
+      "hr_eicu_hi": 1.566,
+      "hr_ratio": 0.9473,
+      "p_eicu": 1.157924665256054e-11
+    }
+  ],
+  "km_by_lp_tertile": [
+    {
+      "tertile": "Low",
+      "n": 35919,
+      "events": 886,
+      "mort_30d_pct": 19.91
+    },
+    {
+      "tertile": "Med",
+      "n": 35926,
+      "events": 2071,
+      "mort_30d_pct": 32.13
+    },
+    {
+      "tertile": "High",
+      "n": 35913,
+      "events": 5659,
+      "mort_30d_pct": 52.43
+    }
+  ],
+  "logrank_chi2": 2921.2006492145592,
+  "logrank_p": 0.0
+}

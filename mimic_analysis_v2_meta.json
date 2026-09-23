@@ -1,0 +1,41 @@
+{
+  "cohort_n": 60506,
+  "n_deaths": 5990,
+  "columns": [
+    "subject_id",
+    "hadm_id",
+    "stay_id",
+    "age",
+    "sex_male",
+    "kdigo_stage",
+    "aki_onset_h",
+    "baseline_cr",
+    "baseline_source",
+    "sofa_nonrenal",
+    "sofa_full",
+    "sofa_n_missing",
+    "vent_24h",
+    "ckd_history_prior",
+    "diabetes",
+    "hypertension",
+    "heart_failure",
+    "copd",
+    "liver_disease",
+    "hospital_expire_flag",
+    "event_time_h",
+    "event_ind"
+  ],
+  "median_event_time_h": 141.83944444444444,
+  "kdigo_distribution": {
+    "0": 43011,
+    "1": 11882,
+    "2": 2249,
+    "3": 3364
+  },
+  "mortality_by_stage": {
+    "0": 5.6590174606496015,
+    "1": 13.474162598889075,
+    "2": 27.612272120942645,
+    "3": 39.6551724137931
+  }
+}
