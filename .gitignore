@@ -70,3 +70,5 @@ bench_nonrenal/
 !jtm_submission/strobe_checklist_jtm.docx
 !journal_recommendations_v2.md
 *.err
+!jtm_submission/manuscript_jtm.docx
+!jtm_submission/submission_guide_jtm.md

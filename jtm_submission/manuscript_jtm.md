@@ -96,7 +96,7 @@ The primary outcome was death within 30 days of ICU admission. **Event times wer
 
 **Sensitivity and supplementary analyses.** Four pre-specified analyses were performed in both cohorts (Supplementary report, Tables S2–S4, Figures S2–S3): (i) restricting to patients with a pre-admission baseline creatinine; (ii) re-staging after imputing the baseline creatinine from an assumed eGFR of 75 mL/min/1.73 m² (CKD-EPI 2021 race-free equation) in patients lacking a pre-admission baseline; (iii) subgroup analyses of the Stage 3 hazard (age ≥ 65, sex, prior CKD, diabetes, ventilation, non-renal SOFA tertiles) with formal interaction tests; and (iv) an AKI phenotype analysis classifying each Stage ≥ 1 patient as **transient** (SCr falling below 1.5× baseline and below baseline + 0.3 mg/dL within 72 h of AKI onset) or **persistent** (otherwise, including RRT within 7 days or death before resolution), modelled in place of KDIGO stage with the same covariate set.
 
-All tests were two-sided. p-values below 0.001 are reported as p < 0.001. Analyses used Python 3.13.12 with pandas 2.3.3, lifelines 0.30.3, statsmodels 0.14.6, scipy 1.18.0, scikit-learn, and matplotlib 3.11.0. All code is publicly available (see Data Availability).
+All tests were two-sided. p-values below 0.001 are reported as p < 0.001. Analyses used Python 3.13.12 with pandas 2.3.3, lifelines 0.30.3, statsmodels 0.14.6, scipy 1.18.0, scikit-learn, and matplotlib 3.11.0. All code is publicly available (see Data Availability). During manuscript preparation, large language models were used for language editing and copyediting only; all scientific content, analyses, and conclusions were generated and verified by the authors, who take full responsibility for the manuscript.
 
 ---
 
