@@ -1,0 +1,18 @@
+{
+  "mimic": {
+    "aki_n": 17492,
+    "died_before_L": 1540,
+    "disc_before_L": 2240,
+    "unknown_after_L": 296,
+    "eligible": 13416,
+    "total_check": 0
+  },
+  "eicu": {
+    "aki_n": 18246,
+    "died_before_L": 2421,
+    "disc_before_L": 3131,
+    "unknown_after_L": 655,
+    "eligible": 12039,
+    "total_check": 0
+  }
+}

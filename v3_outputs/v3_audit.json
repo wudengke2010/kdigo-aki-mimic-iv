@@ -1,0 +1,30 @@
+{
+  "mimic": {
+    "patients": 60506,
+    "tv_unique_ids": 60506,
+    "tv_deaths": 5697,
+    "pat_deaths": 5697,
+    "tv_discharges": 52546,
+    "pat_discharges": 52546,
+    "interval_tiling_ok": true,
+    "duration_match_ok": true,
+    "flow_deaths": 5697,
+    "flow_discharges": 52546,
+    "flow_cohort": 60506,
+    "ALL_OK": true
+  },
+  "eicu": {
+    "patients": 113466,
+    "tv_unique_ids": 113466,
+    "tv_deaths": 9373,
+    "pat_deaths": 9373,
+    "tv_discharges": 102414,
+    "pat_discharges": 102414,
+    "interval_tiling_ok": true,
+    "duration_match_ok": true,
+    "flow_deaths": 9373,
+    "flow_discharges": 102414,
+    "flow_cohort": 113466,
+    "ALL_OK": true
+  }
+}

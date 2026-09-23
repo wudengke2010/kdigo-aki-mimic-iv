@@ -1,0 +1,65 @@
+{
+  "mimic": {
+    "no_aki_n": 43014,
+    "no_aki_crude_death30_pct": 5.4,
+    "aki_n": 17492,
+    "n_eligible": 13416,
+    "n_excluded_died_before_L": 1540,
+    "n_excluded_discharged_before_L": 2240,
+    "n_excluded_unclassifiable": 1111,
+    "n_transient": 8611,
+    "crude_death30_transient_pct": 7.6,
+    "median_followup_transient_h": 104.1,
+    "n_persistent": 4805,
+    "crude_death30_persistent_pct": 23.8,
+    "median_followup_persistent_h": 190.1,
+    "cox_phenotype_unadjusted": {
+      "hr": 2.219205512463069,
+      "lo": 2.015202702016004,
+      "hi": 2.4438599162355437,
+      "p": 4.8537558551715775e-59,
+      "n": 13416,
+      "events": 1800
+    },
+    "cox_phenotype_adjusted": {
+      "hr": 1.9525559700289132,
+      "lo": 1.7674542129031205,
+      "hi": 2.1570430443193174,
+      "p": 1.3466578223900497e-39,
+      "n": 13416,
+      "events": 1800
+    }
+  },
+  "eicu": {
+    "no_aki_n": 95220,
+    "no_aki_crude_death30_pct": 5.3,
+    "aki_n": 18246,
+    "n_eligible": 12039,
+    "n_excluded_died_before_L": 2421,
+    "n_excluded_discharged_before_L": 3131,
+    "n_excluded_unclassifiable": 2618,
+    "n_transient": 7077,
+    "crude_death30_transient_pct": 9.9,
+    "median_followup_transient_h": 104.9,
+    "n_persistent": 4962,
+    "crude_death30_persistent_pct": 21.6,
+    "median_followup_persistent_h": 153.4,
+    "cox_phenotype_unadjusted": {
+      "hr": 1.7631816113195296,
+      "lo": 1.602643419917621,
+      "hi": 1.9398010535962713,
+      "p": 2.4818966319690907e-31,
+      "n": 12039,
+      "events": 1775
+    },
+    "cox_phenotype_adjusted": {
+      "hr": 1.789425911429832,
+      "lo": 1.6248259242549508,
+      "hi": 1.9707003960838165,
+      "p": 3.1027818281454154e-32,
+      "n": 12039,
+      "events": 1775
+    }
+  },
+  "generated": "2026-09-24T00:25:27.991635"
+}

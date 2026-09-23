@@ -1,0 +1,35 @@
+{
+  "mimic": {
+    "n_cohort": 60506,
+    "n_death_le_30d": 5697,
+    "n_discharge_le_30d": 52546,
+    "n_censored_30d": 2263,
+    "n_death_after_30d_not_event": 293,
+    "n_aki_any": 17492,
+    "n_phen_died_before_landmark": 1540,
+    "n_phen_discharged_before_landmark": 2240,
+    "n_phen_unknown": 1111,
+    "n_phen_eligible": 13416,
+    "n_transient": 8611,
+    "n_persistent": 4805,
+    "n_tv_rows": 116206,
+    "n_stage_changes": 21312
+  },
+  "eicu": {
+    "n_cohort": 113466,
+    "n_death_le_30d": 9373,
+    "n_discharge_le_30d": 102414,
+    "n_censored_30d": 1679,
+    "n_death_after_30d_not_event": 177,
+    "n_aki_any": 18246,
+    "n_phen_died_before_landmark": 2421,
+    "n_phen_discharged_before_landmark": 3131,
+    "n_phen_unknown": 2618,
+    "n_phen_eligible": 12039,
+    "n_transient": 7077,
+    "n_persistent": 4962,
+    "n_tv_rows": 180829,
+    "n_stage_changes": 21741
+  },
+  "generated": "2026-09-23T23:34:07.165495"
+}
