@@ -20,7 +20,7 @@
 
 **Methods:** This STROBE- and TRIPOD-compliant retrospective dual-cohort study used MIMIC-IV v3.1 (derivation) and eICU-CRD v2.0 (external validation). We constructed patient-level cohorts (one ICU stay per patient), excluded end-stage renal disease, staged AKI according to KDIGO creatinine criteria with explicit temporal windows (≥0.3 mg/dL within 48 h; ≥1.5×/≥2.0×/≥3.0× baseline within 7 days), and applied a hierarchical baseline creatinine definition prioritising pre-admission values. Illness severity was adjusted using a first-24-h **non-renal** SOFA score. A 24-hour landmark analysis with real event times and 30-day truncation was performed: Kaplan-Meier estimates, Cox models A/B/C, proportional hazards testing (Schoenfeld residuals), and time-stratified Cox models. The fully adjusted MIMIC model was locked and applied, without any refitting, to eICU-CRD.
 
-**Results:** Of 60,506 MIMIC patients (AKI 28.9%) and 113,466 eICU patients (AKI 16.1%), 58,554 and 107,758 survived ≥24 h and formed the landmark cohorts. Thirty-day mortality rose monotonically across stages in both cohorts (MIMIC 4.7%/11.8%/24.2%/36.0%; eICU 5.0%/18.0%/31.7%/30.2%). Adjusted for non-renal SOFA and covariates, Stage 3 vs Stage 0 hazard ratios were 2.45 (95% CI 2.26–2.66) in MIMIC and 2.46 (2.31–2.63) in eICU (cross-cohort ratio 1.00). Hazards were strongly time-dependent: the Stage 3 HR declined from 5.25 (0–7 d) to 1.30 (14–30 d) in MIMIC. Locked-model external validation yielded a C-index of 0.716 (0.708–0.722) versus 0.753 (0.746–0.760) in derivation, calibration slope 0.96, and 30-day mortality of 19.9%/32.1%/52.4% across risk tertiles.
+**Results:** Of 60,506 MIMIC patients (AKI 28.9%) and 113,466 eICU patients (AKI 16.1%), 58,554 and 107,758 survived ≥24 h and formed the landmark cohorts. Thirty-day mortality rose monotonically across stages in both cohorts (MIMIC 4.7%/11.8%/24.2%/36.0%; eICU 5.0%/18.0%/31.7%/30.2%). Adjusted for non-renal SOFA and covariates, Stage 3 vs Stage 0 hazard ratios were 2.45 (95% CI 2.26–2.66) in MIMIC and 2.46 (2.31–2.63) in eICU (cross-cohort ratio 1.00). Hazards were strongly time-dependent: the Stage 3 HR declined from 5.25 (0–7 d) to 1.30 (14–30 d) in MIMIC. Locked-model external validation yielded a C-index of 0.716 (0.708–0.722) versus 0.753 (0.746–0.760) in derivation, calibration slope 0.96, and 30-day mortality of 19.9%/32.1%/52.4% across risk tertiles. In a phenotype analysis, AKI resolving within 72 h of onset carried a near-null adjusted hazard (HR 1.07, 0.99–1.15 in MIMIC; 1.24, 1.16–1.32 in eICU), whereas persistent AKI carried a 2.63- to 3.24-fold hazard.
 
 **Conclusions:** Strictly implemented KDIGO creatinine staging retains an independent, monotonic association with 30-day mortality after conservative severity adjustment, and this association is dominated by a marked early (first-week) hazard that attenuates thereafter. A MIMIC-derived model transported acceptably to a multi-centre database, supporting the generalisability of creatinine-based staging, although mechanical ventilation showed a cohort-dependent direction of association.
 
@@ -94,6 +94,8 @@ The primary outcome was death within 30 days of ICU admission. **Event times wer
 
 **External validation (locked model).** The MIMIC-IV Model C was locked (all coefficients and the baseline hazard frozen, with event-time sanitisation identical to the derivation analysis) and applied to the eICU-CRD landmark cohort **without any refitting**. The linear predictor was transported to eICU-CRD and evaluated for: Harrell's C-index with bootstrap 95% CI (B = 200); time-dependent AUC at 7, 14, and 28 days after the landmark; Brier score at 28 days after the landmark (end of follow-up); calibration slope and intercept (Cox recalibration framework); a Hosmer-Lemeshow-type statistic across linear-predictor deciles; Kaplan-Meier mortality by linear-predictor tertiles; and decision curve analysis. **Cross-cohort parameter consistency** was assessed by refitting Model C in eICU-CRD with the identical covariate set and computing the ratio of eICU to MIMIC hazard ratios for each covariate (ratio ≈ 1 indicates parameter transportability). As a pre-specified sensitivity analysis, Model C was also refitted excluding mechanical ventilation (the covariate with the greatest cross-cohort heterogeneity) to confirm the stability of KDIGO estimates.
 
+**Sensitivity and supplementary analyses.** Four pre-specified analyses were performed in both cohorts (Supplementary report, Tables S2–S4, Figures S2–S3): (i) restricting to patients with a pre-admission baseline creatinine; (ii) re-staging after imputing the baseline creatinine from an assumed eGFR of 75 mL/min/1.73 m² (CKD-EPI 2021 race-free equation) in patients lacking a pre-admission baseline; (iii) subgroup analyses of the Stage 3 hazard (age ≥ 65, sex, prior CKD, diabetes, ventilation, non-renal SOFA tertiles) with formal interaction tests; and (iv) an AKI phenotype analysis classifying each Stage ≥ 1 patient as **transient** (SCr falling below 1.5× baseline and below baseline + 0.3 mg/dL within 72 h of AKI onset) or **persistent** (otherwise, including RRT within 7 days or death before resolution), modelled in place of KDIGO stage with the same covariate set.
+
 All tests were two-sided. p-values below 0.001 are reported as p < 0.001. Analyses used Python 3.13.12 with pandas 2.3.3, lifelines 0.30.3, statsmodels 0.14.6, scipy 1.18.0, scikit-learn, and matplotlib 3.11.0. All code is publicly available (see Data Availability).
 
 ---
@@ -144,6 +146,14 @@ The locked 13-covariate MIMIC-IV Model C was applied to the eICU-CRD landmark co
 
 **Cross-cohort parameter consistency.** Hazard ratio ratios (eICU/MIMIC) were 1.00 for Stage 3, 0.99 for age, 1.01 for non-renal SOFA, and 0.95–1.11 for all comorbidities — indicating excellent transportability of the core parameter set. Two exceptions were notable: Stage 1 and 2 hazards were 31–40% higher in eICU-CRD (ratios 1.40 and 1.31), and **first-24-h mechanical ventilation reversed direction** (MIMIC-IV HR 0.60, 0.56–0.64 vs eICU-CRD HR 1.47, 1.40–1.54; ratio 2.46). This reversal is examined in the Discussion.
 
+### Sensitivity, Subgroup, and AKI Phenotype Analyses (Supplementary)
+
+Restricting both cohorts to patients with a pre-admission baseline creatinine (46,901 MIMIC-IV; 42,868 eICU-CRD) left the Stage 3 hazard materially unchanged (2.38, 2.17–2.62 and 2.70, 2.46–2.97, respectively). Imputing the baseline from an assumed eGFR of 75 mL/min/1.73 m² (mean imputed baseline 1.00 mg/dL) and re-staging raised AKI prevalence from 28.9% to 30.3% (MIMIC-IV) and from 16.1% to 25.1% (eICU-CRD), and the Stage 3 hazard became virtually identical across cohorts (2.52, 2.32–2.73 vs 2.50, 2.36–2.66) — directly supporting the interpretation that the prevalence asymmetry between databases reflects baseline creatinine availability rather than true differences in AKI incidence.
+
+In subgroup analyses, the Stage 3 hazard ratio remained between 1.96 and 2.91 in every pre-specified subgroup of both cohorts, with no direction reversal. The only interaction replicated in both databases was sex (higher Stage 3 hazard in males: MIMIC-IV 2.70 vs 2.15, p(interaction) = 0.0005; eICU-CRD 2.62 vs 2.29, p = 0.030); eICU-CRD interactions with ventilation, diabetes, and high non-renal SOFA were statistically significant but modest, and did not replicate as significant in MIMIC-IV (Figure S2, Table S3).
+
+In the phenotype analysis, 56.0% of MIMIC-IV and 44.6% of eICU-CRD AKI patients had transient AKI (SCr resolution within 72 h of onset). Thirty-day mortality was 9.4% (transient) versus 32.1% (persistent) in MIMIC-IV and 12.7% versus 35.8% in eICU-CRD. In fully adjusted Cox models replacing stage with phenotype, **transient AKI carried a near-null adjusted hazard in MIMIC-IV (HR 1.07, 0.99–1.15) and a small hazard in eICU-CRD (1.24, 1.16–1.32), whereas persistent AKI carried a 2.63-fold (2.45–2.81) and 3.24-fold (3.08–3.40) hazard, respectively**; the phenotype model discriminated better than creatinine stage alone (C-index 0.768 vs 0.753 in MIMIC-IV; 0.789 vs 0.716 in eICU-CRD) (Figure S3, Table S4).
+
 ---
 
 ## Discussion
@@ -161,6 +171,10 @@ Our Stage 2–3 separation contrasts with earlier reports of stage convergence [
 ### Time-Dependence of AKI Hazards
 
 The marked attenuation of the Stage 3 hazard from 5.25 (days 0–7) to 1.30 (days 14–30) in MIMIC-IV — replicated in direction in eICU-CRD — has two practical implications. First, single averaged hazard ratios reported by most registry studies overstate the late-phase risk of AKI stages; clinicians interpreting a Stage 3 diagnosis in a patient surviving to day 14 should weigh a much smaller residual excess hazard. Second, this structure justifies the time-stratified analytic approach advocated by Singh et al. after PH violations [28]. In our landmark design, formal PH tests passed in both cohorts, yet the time-stratified models still revealed substantive effect modification by time — a reminder that passing a global PH test at conservative thresholds does not preclude clinically meaningful hazard decay.
+
+### AKI Duration Matters More Than Peak Stage
+
+The phenotype analysis provides the study's most clinically actionable refinement: among otherwise comparable patients, **transient AKI — resolution of creatinine criteria within 72 h of onset — carried essentially no excess 30-day mortality hazard in MIMIC-IV (HR 1.07) and only a small hazard in eICU-CRD (1.24), whereas AKI persisting beyond 72 h carried a 2.6–3.2-fold hazard, and the phenotype model discriminated better than creatinine stage itself**. This replicates, within a strictly windowed KDIGO framework and across two independent databases, the transient/persistent distinction reported in smaller single-centre cohorts, and refracts the staging–mortality association in a form closer to what clinicians actually need: a Stage 1 value that resolves by day 3 is prognostically closer to no AKI than to Stage 3. Serial creatinine trajectory, not the peak stage snapshot, carries the prognostic information.
 
 ### External Validation: What Transports and What Does Not
 
@@ -180,7 +194,7 @@ First, staging was creatinine-based only; urine output criteria were not applied
 
 ### Conclusions
 
-KDIGO creatinine staging, implemented with its mandated temporal windows in patient-level cohorts and adjusted conservatively for non-renal illness severity, retains a graded, monotonic association with 30-day ICU mortality that is highly reproducible across two independent databases — with the caveat that the excess hazard of severe AKI is concentrated in the first week. A locked MIMIC-IV model transported to a multi-centre cohort with acceptable discrimination and calibration, but individual parameter transportability was heterogeneous, with mechanical ventilation showing cohort-dependent direction. Future dual-database studies should implement staging criteria exactly as specified, use non-renal severity adjustment, and validate locked rather than refitted models.
+KDIGO creatinine staging, implemented with its mandated temporal windows in patient-level cohorts and adjusted conservatively for non-renal illness severity, retains a graded, monotonic association with 30-day ICU mortality that is highly reproducible across two independent databases — with the caveat that the excess hazard of severe AKI is concentrated in the first week and, more decisively, in AKI that persists beyond 72 h: transient AKI carries little if any excess mortality risk, and creatinine trajectory outperforms peak stage prognostically. A locked MIMIC-IV model transported to a multi-centre cohort with acceptable discrimination and calibration, but individual parameter transportability was heterogeneous, with mechanical ventilation showing cohort-dependent direction. Future dual-database studies should implement staging criteria exactly as specified, use non-renal severity adjustment, incorporate AKI duration alongside peak stage, and validate locked rather than refitted models.
 
 ---
 
@@ -267,7 +281,17 @@ Cross-cohort hazard-ratio ratios (eICU/MIMIC): Stage 3 1.00; age 0.99; non-renal
 
 **Figure S1 (Supplementary).** Directed acyclic graph of the assumed causal structure, indicating non-renal SOFA, ventilation, comorbidities, age, and sex as measured confounders and the renal SOFA component as part of the exposure-outcome pathway.
 
+**Figure S2 (Supplementary).** Forest plot of fully adjusted Stage 3 vs Stage 0 hazard ratios by pre-specified subgroup (age, sex, prior CKD, diabetes, ventilation, non-renal SOFA tertiles) in MIMIC-IV and eICU-CRD, with interaction p-values.
+
+**Figure S3 (Supplementary).** Adjusted 30-day mortality hazard ratios for transient versus persistent AKI (72 h resolution criterion), each versus no AKI, in both cohorts.
+
 **Table S1 (Supplementary).** Baseline creatinine source distribution by cohort and KDIGO stage.
+
+**Table S2 (Supplementary).** Sensitivity analyses: pre-admission baseline restriction and eGFR-imputed (CKD-EPI 2021, 75 mL/min/1.73 m²) baseline re-staging, with KDIGO hazard ratios and AKI prevalence in both cohorts.
+
+**Table S3 (Supplementary).** Subgroup-specific Stage 3 hazard ratios and interaction tests in both cohorts.
+
+**Table S4 (Supplementary).** AKI phenotype distribution, 30-day mortality, and fully adjusted Cox models for transient versus persistent AKI.
 
 ---
 
