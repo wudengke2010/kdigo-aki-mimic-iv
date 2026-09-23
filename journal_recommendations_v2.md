@@ -12,14 +12,35 @@
 
 | 梯队 | 期刊 | IF (2026) | JCR/中科院 | APC | 核心逻辑 |
 |:---:|------|:---:|:---:|:---:|------|
-| 🥇 首选 | **BMC Nephrology** | ~2.9 | Q2 / 3区 | $2,690 | 范围完美匹配、数据库研究友好、无字数压力、接收概率最高 |
-| 🥈 备选 | **Journal of Nephrology** | 2.6 | Q2 / 3区 | 免（订阅模式） | 审稿最快（3-8 周）、无强制 APC、意大利肾脏病学会官方刊 |
-| 🎯 冲刺 | **Annals of Intensive Care** | 6.9 | Q1 / 1区(Top) | $3,090 | ICU-AKI 主题完美契合，但"重要意义"门槛高，桌拒风险大 |
+| 🥇 首选 | **Journal of Critical Care** | 3.5 | Q2 / 3区 | 免（订阅模式） | ICU人群完美契合、MIMIC研究大户、IF高于BMC且免APC、审稿~3月 |
+| 🥈 次选 | **BMC Nephrology** | ~2.9 | Q2 / 3区 | $2,690 | AKI数据库队列核心栏目、无字数压力、接收概率最高 |
+| 🥉 三选 | **Journal of Nephrology** | 2.6 | Q2 / 3区 | 免（订阅模式） | 审稿最快（3-8 周）、Springer/SIN官方刊 |
+| 🎯 冲刺 | **Annals of Intensive Care** | 6.9 | Q1 / 1区(Top) | $3,090 | 主题契合但"重要意义"门槛高，两次桌拒后不建议再冒险 |
 | 🛡️ 保底 | **Frontiers in Medicine** | ~3 | Q1-2 / 3区 | ~$2,950 | 综合医学刊，接受大数据回顾性研究，声誉一般 |
 
 ---
 
-## 二、首选：BMC Nephrology ⭐⭐⭐⭐⭐
+## 二、首选：Journal of Critical Care ⭐⭐⭐⭐⭐
+
+| 项目 | 详情（2026-09 核实） |
+|------|------|
+| IF | **3.5**（2026）；CiteScore 6.7 |
+| 分区 | JCR Q2（22/66 CRITICAL CARE MEDICINE）；中科院医学 3区 / 危重病 3区，**无预警** |
+| APC | **订阅模式免版面费**（Gold OA 仅 41.9% 可选） |
+| 审稿 | 约 **3 个月**（6-10 周） |
+| 出版商 | Elsevier；世界重症医学会联合会（WFSICCM）官方刊，季刊，年发文 ~158 篇 |
+
+**匹配理由：**
+1. **研究对象是 ICU 人群**——本文全部 173,972 例均为 ICU 患者，投 ICU 刊比投肾脏专科刊更顺（两次桌拒均来自肾脏专科刊的主题编辑）
+2. **MIMIC/eICU 回顾性研究发表大户**，审稿人对数据库研究的固有方法论问题（时窗、landmark、验证）有认知，v2.1 的严格整改会被认可为优点而非异类
+3. IF 3.5 > BMC Nephrology 2.9，且免 APC
+4. 本文的 ICU 视角卖点（机械通气方向反转、时序效应衰减、SOFA 混杂量化）正是 ICU 读者关心的
+
+**风险：** 年发文量小（~158 篇），竞争中等；Elsevier 投稿系统对格式要求较细。
+
+---
+
+## 三、次选：BMC Nephrology ⭐⭐⭐⭐
 
 | 项目 | 详情（2026-09 核实） |
 |------|------|
@@ -40,7 +61,7 @@
 
 ---
 
-## 三、备选：Journal of Nephrology ⭐⭐⭐⭐
+## 四、三选：Journal of Nephrology ⭐⭐⭐⭐
 
 | 项目 | 详情（2026-09 核实） |
 |------|------|
@@ -55,7 +76,7 @@
 
 ---
 
-## 四、冲刺：Annals of Intensive Care ⭐⭐⭐（高风险高回报）
+## 五、冲刺：Annals of Intensive Care ⭐⭐⭐（高风险高回报）
 
 | 项目 | 详情（2026-09 核实） |
 |------|------|
@@ -69,18 +90,20 @@
 
 ---
 
-## 五、决策建议
+## 六、决策建议
 
 ```
-推荐路线（稳妥优先）：
-  1. BMC Nephrology（首选投稿）
+推荐路线（兼顾 IF 与接收率）：
+  1. Journal of Critical Care（首选：ICU刊+IF 3.5+免APC+MIMIC友好）
+     ↓ 若桌拒
+  2. BMC Nephrology（最稳：AKI数据库队列核心栏目，接收概率最高）
      ↓ 若拒
-  2. Journal of Nephrology（免APC+快审）
+  3. Journal of Nephrology（免APC+最快审稿）
      ↓ 若拒
-  3. Frontiers in Medicine / Sci Rep（保底）
+  4. Frontiers in Medicine / Sci Rep（保底）
 
-激进路线（若重视 IF）：
-  1. Annals of Intensive Care 冲一次（若桌拒不伤稿即转投 BMC Nephrology）
+激进路线（若重视 IF，不推荐）：
+  1. Annals of Intensive Care 冲一次（若桌拒立即转投 Journal of Critical Care）
 ```
 
 **投稿前必须完成（按目标刊格式）：**
