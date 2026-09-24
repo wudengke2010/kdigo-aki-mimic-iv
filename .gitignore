@@ -72,3 +72,4 @@ bench_nonrenal/
 *.err
 !jtm_submission/manuscript_jtm.docx
 !jtm_submission/submission_guide_jtm.md
+!manuscript_revised_v5.md
