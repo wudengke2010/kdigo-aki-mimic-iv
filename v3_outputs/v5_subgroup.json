@@ -1,0 +1,210 @@
+{
+ "mimic": {
+  "age65": {
+   "subgroups": {
+    "Age >= 65": {
+     "n": 32987,
+     "hr": 3.27,
+     "lo": 2.96,
+     "hi": 3.62
+    },
+    "Age < 65": {
+     "n": 27519,
+     "hr": 3.54,
+     "lo": 3.08,
+     "hi": 4.08
+    }
+   },
+   "interaction_p_s3": 0.0228
+  },
+  "male": {
+   "subgroups": {
+    "Male": {
+     "n": 33989,
+     "hr": 3.69,
+     "lo": 3.32,
+     "hi": 4.11
+    },
+    "Female": {
+     "n": 26517,
+     "hr": 2.94,
+     "lo": 2.6,
+     "hi": 3.34
+    }
+   },
+   "interaction_p_s3": 0.0029
+  },
+  "ckd": {
+   "subgroups": {
+    "Prior CKD": {
+     "n": 1879,
+     "hr": 2.9,
+     "lo": 2.04,
+     "hi": 4.13
+    },
+    "No prior CKD": {
+     "n": 58627,
+     "hr": 3.38,
+     "lo": 3.11,
+     "hi": 3.67
+    }
+   },
+   "interaction_p_s3": 0.1628
+  },
+  "dm": {
+   "subgroups": {
+    "Diabetes": {
+     "n": 16405,
+     "hr": 3.59,
+     "lo": 3.1,
+     "hi": 4.17
+    },
+    "No diabetes": {
+     "n": 44101,
+     "hr": 3.25,
+     "lo": 2.95,
+     "hi": 3.58
+    }
+   },
+   "interaction_p_s3": 0.8824
+  },
+  "vent": {
+   "subgroups": {
+    "Ventilated (24h)": {
+     "n": 19720,
+     "hr": 3.65,
+     "lo": 3.23,
+     "hi": 4.12
+    },
+    "Not ventilated": {
+     "n": 40786,
+     "hr": 3.33,
+     "lo": 2.98,
+     "hi": 3.72
+    }
+   },
+   "interaction_p_s3": 0.0008
+  },
+  "sofa_hi": {
+   "subgroups": {
+    "Non-renal SOFA high tertile": {
+     "n": 19359,
+     "hr": 3.75,
+     "lo": 3.38,
+     "hi": 4.16
+    },
+    "Non-renal SOFA low/mid": {
+     "n": 41147,
+     "hr": 2.98,
+     "lo": 2.6,
+     "hi": 3.42
+    }
+   },
+   "interaction_p_s3": 0.8874
+  }
+ },
+ "eicu": {
+  "age65": {
+   "subgroups": {
+    "Age >= 65": {
+     "n": 58888,
+     "hr": 3.43,
+     "lo": 3.16,
+     "hi": 3.73
+    },
+    "Age < 65": {
+     "n": 54578,
+     "hr": 3.28,
+     "lo": 2.96,
+     "hi": 3.64
+    }
+   },
+   "interaction_p_s3": 0.239
+  },
+  "male": {
+   "subgroups": {
+    "Male": {
+     "n": 61465,
+     "hr": 3.57,
+     "lo": 3.28,
+     "hi": 3.88
+    },
+    "Female": {
+     "n": 52001,
+     "hr": 3.03,
+     "lo": 2.74,
+     "hi": 3.35
+    }
+   },
+   "interaction_p_s3": 0.0557
+  },
+  "ckd": {
+   "subgroups": {
+    "Prior CKD": {
+     "n": 2187,
+     "hr": 1.95,
+     "lo": 1.44,
+     "hi": 2.65
+    },
+    "No prior CKD": {
+     "n": 111279,
+     "hr": 3.4,
+     "lo": 3.19,
+     "hi": 3.64
+    }
+   },
+   "interaction_p_s3": 0.0032
+  },
+  "dm": {
+   "subgroups": {
+    "Diabetes": {
+     "n": 29975,
+     "hr": 3.04,
+     "lo": 2.7,
+     "hi": 3.42
+    },
+    "No diabetes": {
+     "n": 83491,
+     "hr": 3.46,
+     "lo": 3.2,
+     "hi": 3.74
+    }
+   },
+   "interaction_p_s3": 0.0625
+  },
+  "vent": {
+   "subgroups": {
+    "Ventilated (24h)": {
+     "n": 26363,
+     "hr": 3.19,
+     "lo": 2.93,
+     "hi": 3.48
+    },
+    "Not ventilated": {
+     "n": 87103,
+     "hr": 3.45,
+     "lo": 3.13,
+     "hi": 3.8
+    }
+   },
+   "interaction_p_s3": 0.0
+  },
+  "sofa_hi": {
+   "subgroups": {
+    "Non-renal SOFA high tertile": {
+     "n": 31521,
+     "hr": 3.4,
+     "lo": 3.15,
+     "hi": 3.67
+    },
+    "Non-renal SOFA low/mid": {
+     "n": 81945,
+     "hr": 3.16,
+     "lo": 2.79,
+     "hi": 3.57
+    }
+   },
+   "interaction_p_s3": 0.0022
+  }
+ }
+}
